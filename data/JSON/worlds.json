@@ -1,0 +1,9 @@
+{
+	"worldJSON" : "world1.json",
+	"backround" : "data/Media/Images/testworld.png", 
+	"title" : "TEST", 
+	"story" : "This is a testing story",  
+	"button1" : "testbutton1", 
+	"button2" : "testbutton2", 
+	"button3" : "testbutton3"
+}

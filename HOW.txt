@@ -1,0 +1,1 @@
+functie loadworld: laad wereld met verhaal en hidden content
