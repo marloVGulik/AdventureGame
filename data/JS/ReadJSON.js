@@ -24,6 +24,7 @@ function loadObject(objectToLoad, callback) {
 // }
 
 function loadGame(worldToLoad) {
+	console.log("Loading new world...")
 	loadObject(worldToLoad, function(text) {
 		LoadedJSON = JSON.parse(text); 
 		output = LoadedJSON; 
@@ -32,12 +33,17 @@ function loadGame(worldToLoad) {
 
 		// Set page elements
 		document.title = output['title'];
-		document.body.style.background = output['background'];
+		document.body.style.backgroundImage = output['background'];
 		document.getElementById("title").innerHTML = output['title']; 
 		document.getElementById("description").innerHTML = output['story'];
 		document.getElementById("button1").innerHTML = output['button1'];
 		document.getElementById("button2").innerHTML = output['button2'];
 		document.getElementById("button3").innerHTML = output['button3'];
+
+		document.getElementById("button1").onclick = function() {main(output['button1Action'])};
+		document.getElementById("button2").onclick = function() {main(output['button2Action'])};
+		document.getElementById("button3").onclick = function() {main(output['button3Action'])};
+
 		loadWorldScript(output['worldScript']);
 		return output;
 	});
@@ -46,7 +52,8 @@ function loadGame(worldToLoad) {
 function loadWorldScript(ScriptToLoad) {
 	var script = document.createElement("script");
 	script.src = "data/Worlds/" + ScriptToLoad;
-	script.type = "text/javascript"
+	script.type = "text/javascript";
+	script.id = ScriptToLoad;
 
 	document.body.appendChild(script);
 }

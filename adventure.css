@@ -2,7 +2,50 @@
 	display: none;
 }
 body {
+	text-align: center;
 	background-image: url('data/Media/Images/bluescreen.jpg');
 	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
+#text-container {
+	color: #F1FAEE;
+	position: absolute;
+	bottom: -10px;
+	border: 5px solid #1D1335;
+	border-radius: 10px;
+	margin-left: 12.5%;
+	padding: 1px 0 1% 0;
+	margin-right: auto;
+	text-align: center;
+	width: 73%;
+	background-color: #1D1335CC;
+}
+
+#title {
+	text-align: left;
+	margin: 2% 2% 2% 2%;
+}
+
+#game-buttons {
+	color: #F1FAEE;
+	position: absolute;
+	top: -10px;
+	border: 5px solid #1D1335;
+	border-radius: 10px;
+	margin-left: 25%;
+	padding: 16px 0 1% 0;
+	margin-right: auto;
+	text-align: center;
+	width: 48%;
+	background-color: #1D1335CC;
+}
+
+#game-buttons button {
+	color: #F1FAEE;
+	background-color: #1D1335DD;
+	display: inline-block;
+	padding: 1% 1%;
+	width: 30%;
+	border-radius: 5px;
+}
