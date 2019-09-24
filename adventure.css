@@ -1,4 +1,8 @@
 .hidden {
 	display: none;
 }
+body {
+	background-image: url('data/Media/Images/bluescreen.jpg');
+	background-size: 100%;
+}
 

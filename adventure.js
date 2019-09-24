@@ -1,3 +1,5 @@
-loadGame("worlds.json");
-var world = loadGame("worlds.json");
-console.log(world);
+var Items = [];
+
+
+var world = loadGame("JSON/start.json");
+console.log("World is : " + world['title']);

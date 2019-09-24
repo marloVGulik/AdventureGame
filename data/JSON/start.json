@@ -1,0 +1,13 @@
+{
+	"worldJSON" : "start.json",
+	"background" : "url('data/Media/Images/testworld.png')", 
+	"title" : "TEST", 
+	"story" : "This is a testing story",  
+	"button1" : "testbutton1", 
+	"button2" : "testbutton2", 
+	"button3" : "testbutton3",
+	"button1Action" : "DoAction1()",
+	"button2Action" : "DoAction2()",
+	"button3Action" : "DoAction3()",
+	"worldScript" : "TEST/test.js"
+}
